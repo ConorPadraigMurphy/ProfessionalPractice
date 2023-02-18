@@ -1,54 +1,54 @@
 >What should a driver do where a section of road ahead has a shallow flooded area?
 	Increase speed and use a higher gear.
 	Decrease speed and use a higher gear.
-	Drive in a low gear as slowly as possible keeping the revs high.
+	Drive in a low gear as slowly as possible keeping the revs high. - Correct
 	Use a high gear and maintain the same speed keeping the engine revs low.
 
 >What should a driver do if a system warning light lights up on the dashboard of their vehicle whilst driving?
 	Continue to drive and listen for any unusual sounds.
 	Continue for a distance to see if the light goes out.
-	Stop and check the problem.
+	Stop and check the problem. - Correct
 	Carry on and check the problem later.
 	
 >What does this sign mean?
 	Slippery road ahead.
 	Road liable to flooding.
 	Steep descent ahead.
-	Unprotected quay, canal or river ahead.
+	Unprotected quay, canal or river ahead. - Correct
 	http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_R6XFF.jpg
 
 >If a vehicle is driven with low oil pressure, what effect does this have on its engine?
 	It increases fuel consumption.
 	It increases fuel efficiency.
-	It increases wear and tear on the engine.
+	It increases wear and tear on the engine. - Correct
 	It increases exhaust emissions.
 
->It increases exhaust emissions.
+>When approaching a roundabout, to whom should a driver give way ?
 	The driver must only give way to heavy goods vehicles on the roundabout.
 	The driver approaching the roundabout always has right of way.
-	The driver must give way to traffic approaching from the right or already on the roundabout.
+	The driver must give way to traffic approaching from the right or already on the roundabout. - Correct
 	The driver must only give way to pedestrians and cyclists on the roundabout.
 
 >When meeting oncoming traffic on a national road, is it permitted to move into the hard shoulder to allow following traffic to overtake?
 	Yes, when a truck or bus is oncoming.
 	No, except on ?2-plus-1 roads?.
 	No, it is never permitted to drive on a hard shoulder except in the case of an emergency.
-	Yes, temporarily when the hard shoulder is clear and it is safe to drive there.
+	Yes, temporarily when the hard shoulder is clear and it is safe to drive there. - Correct
 	
 >What is the danger in driving at high speeds on wet roads?
-	Danger of ?aquaplaning? or sliding across the road surface.
+	Danger of ?aquaplaning? or sliding across the road surface. - Correct
 	Danger that tyre pressure will automatically increase.
 	There is no danger provided that the tyre pressure has been increased to take account of weather conditions.
 	There is no danger provided that the tyre pressure has been reduced to take account of weather conditions.
 	
 >How should a driver in a vehicle without anti-lock brakes (ABS) deal with a front-wheel straight-line skid?
-	Press and release the footbrake at rapid intervals.
+	Press and release the footbrake at rapid intervals. - Correct
 	Turn the steering wheel gently from side to side.
 	Press in the clutch and release the accelerator.
 	Pull the handbrake and hold the footbrake down.
 	
 >What is the purpose of the red reflectors at the rear of a vehicle?
-	They reflect light at night to make other road users aware of the vehicle.
+	They reflect light at night to make other road users aware of the vehicle. - Correct
 	They warn the driver behind to switch to main beam.
 	They warn pedestrians of the vehicle?s location.
 	They are a substitute in case of brake-light failure.
@@ -57,29 +57,29 @@
 	Only during the night.
 	At no time.
 	At all times.
-	Only during the day.
+	Only during the day. - Correct
 	
 >In dry weather how might a driver judge what is a safe following distance to vehicle in front?
 	By allowing at least two vehicle lengths between the vehicles.
-	By using a fixed point and applying the two second rule.
+	By using a fixed point and applying the two second rule. - Correct
 	Drive at the same speed as the vehicle in front.
 	Allow a least two vehicle lengths for each kilometre per hour.
 
 >If a driver passes their test using a vehicle with automatic transmission, which vehicles are they licensed to drive?
 	Only manual vehicles in the licence category.
 	All vehicles in the licence category but only automatic vehicles on a motorway.
-	Only automatic vehicles in the licence category.
+	Only automatic vehicles in the licence category. - Correct
 	All vehicles in the licence category.
 	
 >What specific observations should a driver make before reversing their vehicle?
 	Look in interior mirror only.
-	Look over both shoulders and behind.
+	Look over both shoulders and behind. - Correct
 	Look in door mirrors only.
 	Look over right-hand shoulder.
 	
 >What does this sign mean?
 	Children?s play area ahead.
-	School playground ahead.
+	School playground ahead. - Correct
 	Railway crossing ahead.
 	School children crossing ahead.
 	http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Nkego.jpg
@@ -87,30 +87,30 @@
 > What should a driver do before checking the engine oil level on a vehicle?
 	Make sure that the engine is switched on and hot.
 	Make sure that the engine is running.
-	Make sure that the engine is switched off and cold.
+	Make sure that the engine is switched off and cold. - Correct
 	Make sure that the vehicle is in a low gear.
 	
 >What should a driver do when approaching traffic lights that change from green to amber?
 	Accelerate to clear the junction.
 	Sound the horn while proceeding through the junction.
-	Stop, unless it is unsafe to do so.
+	Stop, unless it is unsafe to do so. - Correct
 	Stop the vehicle immediately.	
 	
 >What effect does spilt diesel have on a road?
 	It increases tyre noise.
-	It makes the road more slippery.
+	It makes the road more slippery. - Correct
 	It improves tyre grip on bends.
 	It improves the vehicle?s braking ability.
 	
 >What should a driver do if a heavy goods vehicle in front has moved out to make a left turn ahead?
 	Drive into the space on its left-hand side.
-	Stay behind it and allow it to complete the turn.
+	Stay behind it and allow it to complete the turn. - Correct
 	Move out immediately and overtake as quickly as possible.
 	Move to the right but do not overtake.
 	
 >Which vehicle is in the correct position to make a right turn from the major road into the minor road?
 	2
 	1
-	3
+	3 - Correct
 	4
 	http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_OBJxm.jpg
