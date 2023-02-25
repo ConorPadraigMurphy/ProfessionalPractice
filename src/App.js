@@ -9,10 +9,10 @@ import {
   Route
 } from 'react-router-dom';
 
-import { TestPage } from "./componenets/TestPage";
 import { RevisionPage } from "./componenets/RevisionPage";
 import { About } from "./componenets/About";
 import { HomePageContent } from "./componenets/HomePageContent";
+import {TestPage} from "./componenets/TestPage";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <div className="App" >
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="/">Website Name</Navbar.Brand>
+            <Navbar.Brand href="/">Driving 101</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/TestPage">Test</Nav.Link>
