@@ -27,10 +27,11 @@ async function main() {
 const theoryTestSchema = new mongoose.Schema({
   //Schema here
   question: String,
-  answer1: [{ answer: String, correct: Boolean }],
-  answer2: [{ answer: String, correct: Boolean }],
-  answer3: [{ answer: String, correct: Boolean }],
-  answer4: [{ answer: String, correct: Boolean }]
+  answer1: String,
+  answer2: String,
+  answer3: String,
+  answer4: String,
+  correctAnswer: String
 });
 
 const questionsModel = mongoose.model('allQuestions', theoryTestSchema);
@@ -43,8 +44,8 @@ app.post('/api/questions', (req, res) => {
     answer1: req.body.answer1,
     answer2: req.body.answer2,
     answer3: req.body.answer3,
-    answer4: req.body.answer4
-
+    answer4: req.body.answer4,
+    correctAnswer: req.body.correctAnswer
   })
   res.send('Question Received');
 })
@@ -52,6 +53,7 @@ app.post('/api/questions', (req, res) => {
 //Gets all json data from /api/questions
 app.get('/api/questions', (req, res) => {
   questionsModel.find((error, data) => {
+    console.log(data);
     res.json(data);
   })
 })
