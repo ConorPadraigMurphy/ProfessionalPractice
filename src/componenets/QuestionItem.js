@@ -12,8 +12,7 @@ export class QuestionItemcomp extends React.Component {
       correctAnswer: null
     };
   }
-
-
+  
     //Checks if users choice is correct to correctAnswer
     checkAnswer(selectedAnswer) {
         const isCorrect = selectedAnswer === this.props.Questions.correctAnswer;

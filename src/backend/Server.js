@@ -38,7 +38,7 @@ const questionsModel = mongoose.model('allQuestions', theoryTestSchema);
 
 //Post request to get question, and answers
 app.post('/api/questions', (req, res) => {
-  console.log(req.body);
+  //console.log(req.body);
   theoryTestSchema.create({
     question: req.body.question,
     answer1: req.body.answer1,
@@ -53,7 +53,7 @@ app.post('/api/questions', (req, res) => {
 //Gets all json data from /api/questions
 app.get('/api/questions', (req, res) => {
   questionsModel.find((error, data) => {
-    console.log(data);
+    //console.log(data);
     res.json(data);
   })
 })
