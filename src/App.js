@@ -13,6 +13,8 @@ import { RevisionPage } from "./componenets/RevisionPage";
 import { About } from "./componenets/About";
 import { HomePageContent } from "./componenets/HomePageContent";
 import {TestPage} from "./componenets/TestPage";
+//Import icons - FontAwesome
+import { FaHome, FaClock,FaBookOpen,FaQuestionCircle } from "react-icons/fa";
 
 function App() {
   return (
@@ -22,10 +24,10 @@ function App() {
           <Container>
             <Navbar.Brand href="/">Driving 101</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/TestPage">Test</Nav.Link>
-              <Nav.Link href="/RevisionPage">Revision</Nav.Link>
-              <Nav.Link href="/About">About</Nav.Link>
+              <Nav.Link href="/"><FaHome/> Home</Nav.Link>
+              <Nav.Link href="/TestPage"><FaClock/> Test</Nav.Link>
+              <Nav.Link href="/RevisionPage"><FaBookOpen/> Revision</Nav.Link>
+              <Nav.Link href="/About"><FaQuestionCircle/> About</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
@@ -35,9 +37,6 @@ function App() {
           <Route path='/RevisionPage' element={<RevisionPage></RevisionPage>}></Route>
           <Route path='/About' element={<About></About>}></Route>
         </Routes>
-        {/* <Header></Header>
-    <Content></Content>
-    <Footer></Footer> */}
       </div>
     </Router>
   );
