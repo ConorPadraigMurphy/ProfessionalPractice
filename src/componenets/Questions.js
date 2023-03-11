@@ -25,7 +25,7 @@ export class Questions extends React.Component {
                 }
             )}
 
-            <Link to="/TestPage/Results" state={this.state.score}>See Results</Link>
+            <Link to="/TestPage/Results" state={this.state.score} style={{ margin: "10px" }} className="btn btn-success">See Results</Link>
 
         </div>
     }

@@ -46,14 +46,14 @@ export class TestPage extends React.Component {
     }
 
 
-state = { Questions: [{}] };
+    state = { Questions: [{}] };
 
-render() {
-    return (
-        <div>
-            <h2>Theory Test:</h2>
-            <Questions Questions={this.state.Questions} Refresh={this.componentDidMount}></Questions>
-        </div>
-    );
-}
+    render() {
+        return (
+            <div>
+                <h2>Theory Test:</h2>
+                <Questions Questions={this.state.Questions} Refresh={this.componentDidMount}></Questions>
+            </div>
+        );
+    }
 }
