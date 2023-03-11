@@ -1,6 +1,10 @@
 import React from "react";
 import { Questions } from "./Questions";
 import axios from "axios";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import Button from "react-bootstrap/Button";
+import Card from 'react-bootstrap/Card';
 
 export class TestPage extends React.Component {
 
@@ -50,9 +54,32 @@ export class TestPage extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{ margin: '20px'}}>
                 <h2>Theory Test:</h2>
                 <Questions Questions={this.state.Questions} Refresh={this.componentDidMount}></Questions>
+
+                <Popup trigger={<Button  variant="success"> Finish </Button>} modal>
+
+                    <Card style={{ width: '99%' }} >
+                        <Card.Body>
+                            <Card.Title>You have finished the test!</Card.Title>
+                            <Card.Text>You scored:</Card.Text>
+                            <Card.Text>If you would like to save your score please input your name below:</Card.Text>
+                            <form onSubmit={this.handleSubmit}>
+
+                                <div className="form-group">
+                                    <label>Name: </label>
+                                    <input type="text" className="form-control"required />
+                                </div>
+
+                                <br></br>
+                                <Button variant="success" type="submit" value="Submit">Submit</Button>
+                            </form>
+                        </Card.Body>
+                    </Card>
+
+                </Popup>
+
             </div>
         );
     }

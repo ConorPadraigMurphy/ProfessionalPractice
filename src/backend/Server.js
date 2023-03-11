@@ -35,25 +35,37 @@ const theoryTestSchema = new mongoose.Schema({
   correctAnswer: String
 });
 
+const scoreSchema = new mongoose.Schema({
+  //Schema here
+  user: String,
+  score: Number
+  
+});
+
 const questionsModel = mongoose.model('allQuestions', theoryTestSchema);
+const leaderBoardModel = mongoose.model('leaderBoard', scoreSchema);
 
 //Post request to get question, and answers
-app.post('/api/questions', (req, res) => {
+app.post('/api/leaderboard', (req, res) => {
   //console.log(req.body);
-  theoryTestSchema.create({
-    question: req.body.question,
-    answer1: req.body.answer1,
-    answer2: req.body.answer2,
-    answer3: req.body.answer3,
-    answer4: req.body.answer4,
-    correctAnswer: req.body.correctAnswer
+  leaderBoardModel.create({
+    user: req.body.user,
+    score: req.body.score
   })
-  res.send('Question Received');
+  res.send('Leaderboard Received');
 })
 
 //Gets all json data from /api/questions
 app.get('/api/questions', (req, res) => {
   questionsModel.find((error, data) => {
+    //console.log(data);
+    res.json(data);
+  })
+})
+
+//Gets all json data from /api/leaderboard
+app.get('/api/leaderboard', (req, res) => {
+  leaderBoardModel.find((error, data) => {
     //console.log(data);
     res.json(data);
   })

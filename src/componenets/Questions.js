@@ -1,7 +1,7 @@
 import React from "react";
 import { QuestionItemcomp, score } from "./QuestionItem";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+
 export class Questions extends React.Component {
 
     constructor() {
@@ -27,6 +27,6 @@ export class Questions extends React.Component {
 
             <Link to="/TestPage/Results" state={this.state.score} style={{ margin: "10px" }} className="btn btn-success">See Results</Link>
 
-        </div>
+        </div>  
     }
 }
