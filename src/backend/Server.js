@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const port = 4000;
+require('dotenv').config();
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -21,7 +22,7 @@ mongoose.set('strictQuery', true);
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://admin:admin@cluster0.z0qnvor.mongodb.net/?retryWrites=true&w=majority');
+  await mongoose.connect(process.env.MONGO_URI);
 }
 
 const theoryTestSchema = new mongoose.Schema({
