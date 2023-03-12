@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/Button";
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 export class QuestionItemcomp extends React.Component {
-
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -18,10 +18,10 @@ export class QuestionItemcomp extends React.Component {
   checkAnswer(selectedAnswer) {
     const isCorrect = selectedAnswer === this.props.Questions.correctAnswer;
     if (isCorrect) {
-      alert('Correct answer!');
+      //alert('Correct answer!');
       this.props.updateScore(this.props.score+1)
     } else {
-      alert('Wrong answer!');
+      //alert('Wrong answer!');
     }
 
     this.setState({
