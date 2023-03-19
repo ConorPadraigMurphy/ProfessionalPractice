@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/Button";
-import CardHeader from 'react-bootstrap/esm/CardHeader';
 export class QuestionItemcomp extends React.Component {
   
   constructor(props) {
