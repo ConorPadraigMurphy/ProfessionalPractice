@@ -7,7 +7,41 @@ import 'reactjs-popup/dist/index.css';
 import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 
+
 export class HomePageContent extends React.Component {
+
+    constructor() {
+        super();
+        this.onChangeAmount = this.onChangeAmount.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = {
+            amount: 0,
+            questionAmount: 0
+        }
+    }
+
+    //When submit button is pressed
+    handleSubmit(e) {
+        e.preventDefault();
+        console.log(`${this.state.questionAmount}`);
+
+        this.setState({
+            amount: 0
+        })
+        
+    }
+
+    onChangeAmount(e) {
+        this.setState({
+            amount: e.target.questionAmount
+        })
+    }
+
+    handleRadioButton(questionAmount) {
+        this.setState({
+            questionAmount: questionAmount
+        });
+    }
 
     render() {
         return (
@@ -17,26 +51,27 @@ export class HomePageContent extends React.Component {
                         <h2>Welcome to Driving 101</h2>
                         <p>Learn and do Mock Theory Test.</p>
                         {/* <Link to={'/TestPage'} style={{ marginRight: "auto" }} className="btn btn-success">Start Test</Link> */}
-                        
 
                         <Popup trigger={<Button variant="success"> Start Test </Button>} modal>
                             <Card style={{ width: '99%' }} >
                                 <Card.Body>
                                     <Card.Title>Question Amount:</Card.Title>
                                     <Card.Text>Please choose how many questions you would like the test to have:</Card.Text>
-                                    <form >
+                                    <form onSubmit={this.handleSubmit}>
                                         <div className="form-group">
-                                        <input type="radio" id="amount5" name="amount"  value="5" required/>
-                                        <label for="amount5">5 Questions</label>
-                                        <br></br>
-                                        <input type="radio" id="amount15" name="amount" value="15" required/>
-                                        <label for="amount15">15 Questions</label>
-                                        <br></br>
-                                        <input type="radio" id="amount20" name="amount" value="20" required/>
-                                        <label for="amount20">20 Questions</label>
-                                        <br></br>
+                                            <input type="radio" id="amount5" name="amount" checked={this.state.questionAmount === 5} onChange={() => this.handleRadioButton(5)} required />
+                                            <label for="amount5">5 Questions</label>
+                                            <br></br>
+                                            <input type="radio" id="amount15" name="amount"  checked={this.state.questionAmount === 15} onChange={() => this.handleRadioButton(15)} required />
+                                            <label for="amount15">15 Questions</label>
+                                            <br></br>
+                                            <input type="radio" id="amount20" name="amount"  checked={this.state.questionAmount === 20} onChange={() => this.handleRadioButton(20)} required />
+                                            <label for="amount20">20 Questions</label>
+                                            <br></br>
                                         </div>
-                                        <Button variant="success" type="submit" value="Submit" style={{ margin: "10px" }}>Start</Button>
+                                        <Link to={{ pathname: '/testpage', state: { questionAmount: this.state.questionAmount }}}>
+                                            <Button variant="success" type="submit" value="Submit" style={{ margin: "10px" }}>Start</Button>
+                                        </Link>
                                         <br></br>
                                     </form>
                                 </Card.Body>
