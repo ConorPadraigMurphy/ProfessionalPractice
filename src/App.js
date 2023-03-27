@@ -13,9 +13,10 @@ import { RevisionPage } from "./componenets/RevisionPage";
 import { About } from "./componenets/About";
 import { HomePageContent } from "./componenets/HomePageContent";
 import {TestPage} from "./componenets/TestPage";
+import {LeaderboardPage} from "./componenets/LeaderboardPage";
 import Results from "./componenets/Results";
 //Import icons - FontAwesome
-import { FaHome, FaClock,FaBookOpen,FaQuestionCircle } from "react-icons/fa";
+import { FaHome, FaClock,FaBookOpen,FaQuestionCircle, FaMedal } from "react-icons/fa";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Nav.Link href="/"><FaHome/> Home</Nav.Link>
               <Nav.Link href="/TestPage"><FaClock/> Test</Nav.Link>
               <Nav.Link href="/RevisionPage"><FaBookOpen/> Revision</Nav.Link>
+              <Nav.Link href="/LeaderboardPage"><FaMedal/> LeaderboardPage</Nav.Link>
               <Nav.Link href="/About"><FaQuestionCircle/> About</Nav.Link>
             </Nav>
           </Container>
@@ -36,6 +38,7 @@ function App() {
           <Route path='/' element={<HomePageContent></HomePageContent>}></Route>
           <Route path='/TestPage' element={<TestPage></TestPage>}></Route>
           <Route path='/RevisionPage' element={<RevisionPage></RevisionPage>}></Route>
+          <Route path='/LeaderboardPage' element={<LeaderboardPage></LeaderboardPage>}></Route>
           <Route path='/About' element={<About></About>}></Route>
           <Route path='/TestPage/Results' element={<Results></Results>}></Route>
         </Routes>

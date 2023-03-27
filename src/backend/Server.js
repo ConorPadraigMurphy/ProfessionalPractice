@@ -3,6 +3,7 @@ const app = express();
 var bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const { sort } = require('semver');
 const port = 4000;
 require('dotenv').config();
 
@@ -59,7 +60,7 @@ app.post('/api/leaderboard', (req, res) => {
 app.get('/api/questions', (req, res) => {
   questionsModel.find((error, data) => {
     //console.log(data);
-    res.json(data);
+    res.json(data.sort);
   })
 })
 
