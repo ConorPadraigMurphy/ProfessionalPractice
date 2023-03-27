@@ -29,7 +29,7 @@ function App() {
               <Nav.Link href="/"><FaHome/> Home</Nav.Link>
               <Nav.Link href="/TestPage"><FaClock/> Test</Nav.Link>
               <Nav.Link href="/RevisionPage"><FaBookOpen/> Revision</Nav.Link>
-              <Nav.Link href="/LeaderboardPage"><FaMedal/> LeaderboardPage</Nav.Link>
+              <Nav.Link href="/LeaderboardPage"><FaMedal/> Leaderboard</Nav.Link>
               <Nav.Link href="/About"><FaQuestionCircle/> About</Nav.Link>
             </Nav>
           </Container>
