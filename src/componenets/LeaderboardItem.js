@@ -1,16 +1,9 @@
 import React from 'react';
 import '../App.css';
 import Card from 'react-bootstrap/Card';
-import Button from "react-bootstrap/Button";
-import axios from "axios";
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 
 export class LeaderboardItem extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
-    
 
     render() {
         return (

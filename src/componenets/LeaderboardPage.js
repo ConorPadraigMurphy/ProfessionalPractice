@@ -2,8 +2,6 @@ import React from 'react';
 import '../App.css';
 import Card from 'react-bootstrap/Card';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import { Leaderboard } from './Leaderboard';
 
@@ -29,10 +27,8 @@ export class LeaderboardPage extends React.Component {
             <div>
                 <Card>
                     <CardHeader><h1>Leaderboard</h1></CardHeader>
-                    <Card.Body>
-                      <Leaderboard Leaderboard={this.state.Leaderboard} Refresh={this.componentDidMount}></Leaderboard>
-                    </Card.Body>
                 </Card>
+                <Leaderboard Leaderboard={this.state.Leaderboard} Refresh={this.componentDidMount}></Leaderboard>
             </div>
         );
     }

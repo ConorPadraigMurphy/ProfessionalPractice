@@ -1,6 +1,5 @@
 import React from "react";
-import { QuestionItemcomp, score } from "./QuestionItem";
-import { Link, Navigate } from "react-router-dom";
+import { QuestionItemcomp } from "./QuestionItem";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import Button from "react-bootstrap/Button";
@@ -44,7 +43,7 @@ export class Questions extends React.Component {
             user: ''
         })
 
-        window.location.href = "/TestPage/Results";
+        window.location.href = "/LeaderboardPage";
 
     }
 
@@ -72,8 +71,6 @@ export class Questions extends React.Component {
                     return <QuestionItemcomp Questions={Quest} key={Quest._id} Refresh={this.props.Refresh} score={this.state.score} updateScore={this.updateScore}></QuestionItemcomp>
                 }
             )}
-
-            <Link to="/TestPage/Results" state={this.state.score} style={{ margin: "10px" }} className="btn btn-success">See Results</Link>
 
             <Popup trigger={<Button variant="success"> Finish </Button>} modal>
                 <Card style={{ width: '99%' }} >

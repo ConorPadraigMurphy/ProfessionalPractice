@@ -1,15 +1,7 @@
 import React from "react";
 import { LeaderboardItem} from "./LeaderboardItem";
-import { Link, Navigate } from "react-router-dom";
-import Card from 'react-bootstrap/Card';
-import axios from "axios";
 
 export class Leaderboard extends React.Component {
-
-    constructor() {
-        super();
-
-    }
 
     render() {
         return <div>

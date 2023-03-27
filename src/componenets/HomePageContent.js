@@ -24,7 +24,6 @@ export class HomePageContent extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log(`${this.state.questionAmount}`);
-
         this.setState({
             amount: 0
         })
@@ -41,6 +40,8 @@ export class HomePageContent extends React.Component {
         this.setState({
             questionAmount: questionAmount
         });
+        localStorage.questionAmount = questionAmount;
+        console.log( localStorage.questionAmount ); 
     }
 
     render() {

@@ -15,7 +15,6 @@ export class TestPage extends React.Component {
         axios.get('http://localhost:4000/api/questions')
             .then(response => {
                 //console.log(response.data)
-                console.log(this.state.questionAmount)
                 this.setState({ Questions: this.shuffle(response.data) });
             })
             .catch(function (error) {
@@ -42,12 +41,15 @@ export class TestPage extends React.Component {
                 array[randomIndex], array[currentIndex]];
         }
 
+
+        array = array.slice(0, localStorage.questionAmount);
+
         //Returns shuffled array
         return array;
     }
 
 
-    state = { Questions: [{}], questionAmount: 0 };
+    state = { Questions: [{}] };
 
     render() {
         return (

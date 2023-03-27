@@ -14,7 +14,6 @@ import { About } from "./componenets/About";
 import { HomePageContent } from "./componenets/HomePageContent";
 import {TestPage} from "./componenets/TestPage";
 import {LeaderboardPage} from "./componenets/LeaderboardPage";
-import Results from "./componenets/Results";
 //Import icons - FontAwesome
 import { FaHome, FaClock,FaBookOpen,FaQuestionCircle, FaMedal } from "react-icons/fa";
 
@@ -40,7 +39,6 @@ function App() {
           <Route path='/RevisionPage' element={<RevisionPage></RevisionPage>}></Route>
           <Route path='/LeaderboardPage' element={<LeaderboardPage></LeaderboardPage>}></Route>
           <Route path='/About' element={<About></About>}></Route>
-          <Route path='/TestPage/Results' element={<Results></Results>}></Route>
         </Routes>
       </div>
     </Router>
