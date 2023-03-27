@@ -60,7 +60,7 @@ app.post('/api/leaderboard', (req, res) => {
 app.get('/api/questions', (req, res) => {
   questionsModel.find((error, data) => {
     //console.log(data);
-    res.json(data.sort);
+    res.json(data);
   })
 })
 
