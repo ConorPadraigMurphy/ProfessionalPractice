@@ -19,8 +19,6 @@ export class LeaderboardPage extends React.Component {
             })
     }
 
-
-
     state = { Leaderboard: [] };
     render() {
         return (

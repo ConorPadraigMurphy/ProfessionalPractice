@@ -27,7 +27,7 @@ export class HomePageContent extends React.Component {
         this.setState({
             amount: 0
         })
-        
+
     }
 
     onChangeAmount(e) {
@@ -41,7 +41,7 @@ export class HomePageContent extends React.Component {
             questionAmount: questionAmount
         });
         localStorage.questionAmount = questionAmount;
-        console.log( localStorage.questionAmount ); 
+        console.log(localStorage.questionAmount);
     }
 
     render() {
@@ -63,14 +63,14 @@ export class HomePageContent extends React.Component {
                                             <input type="radio" id="amount5" name="amount" checked={this.state.questionAmount === 5} onChange={() => this.handleRadioButton(5)} required />
                                             <label for="amount5">5 Questions</label>
                                             <br></br>
-                                            <input type="radio" id="amount15" name="amount"  checked={this.state.questionAmount === 15} onChange={() => this.handleRadioButton(15)} required />
+                                            <input type="radio" id="amount15" name="amount" checked={this.state.questionAmount === 15} onChange={() => this.handleRadioButton(15)} required />
                                             <label for="amount15">15 Questions</label>
                                             <br></br>
-                                            <input type="radio" id="amount20" name="amount"  checked={this.state.questionAmount === 20} onChange={() => this.handleRadioButton(20)} required />
+                                            <input type="radio" id="amount20" name="amount" checked={this.state.questionAmount === 20} onChange={() => this.handleRadioButton(20)} required />
                                             <label for="amount20">20 Questions</label>
                                             <br></br>
                                         </div>
-                                        <Link to={{ pathname: '/testpage', state: { questionAmount: this.state.questionAmount }}}>
+                                        <Link to={{ pathname: '/testpage', state: { questionAmount: this.state.questionAmount } }}>
                                             <Button variant="success" type="submit" value="Submit" style={{ margin: "10px" }}>Start</Button>
                                         </Link>
                                         <br></br>

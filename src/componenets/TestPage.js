@@ -1,7 +1,8 @@
 import React from "react";
 import { Questions } from "./Questions";
 import axios from "axios";
-
+import Card from 'react-bootstrap/Card';
+import CardHeader from 'react-bootstrap/esm/CardHeader';
 
 export class TestPage extends React.Component {
 
@@ -53,8 +54,10 @@ export class TestPage extends React.Component {
 
     render() {
         return (
-            <div style={{ margin: '20px'}}>
-                <h2>Theory Test:</h2>
+            <div>
+                <Card>
+                    <CardHeader><h1>Theory Test</h1></CardHeader>
+                </Card>
                 <Questions Questions={this.state.Questions} Refresh={this.componentDidMount}></Questions>
             </div>
         );

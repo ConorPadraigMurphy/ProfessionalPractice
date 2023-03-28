@@ -1,5 +1,5 @@
 import React from "react";
-import { LeaderboardItem} from "./LeaderboardItem";
+import { LeaderboardItem } from "./LeaderboardItem";
 
 export class Leaderboard extends React.Component {
 
@@ -9,7 +9,7 @@ export class Leaderboard extends React.Component {
                 (Leader) => {
                     return <LeaderboardItem Leaderboard={Leader} key={Leader._id} Refresh={this.props.Refresh}></LeaderboardItem>
                 }
-            )}     
+            )}
         </div>
     }
 }

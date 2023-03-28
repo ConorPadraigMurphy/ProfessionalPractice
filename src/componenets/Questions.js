@@ -17,7 +17,7 @@ export class Questions extends React.Component {
         this.state = {
             score: 0,
             user: '',
-            
+
         };
     }
 
@@ -67,8 +67,8 @@ export class Questions extends React.Component {
     render() {
         return <div>
             {this.props.Questions.map(
-                (Quest) => {
-                    return <QuestionItemcomp Questions={Quest} key={Quest._id} Refresh={this.props.Refresh} score={this.state.score} updateScore={this.updateScore}></QuestionItemcomp>
+                (Quest, index) => {
+                    return <QuestionItemcomp Questions={Quest} key={Quest._id} Refresh={this.props.Refresh} questionNumber={index + 1} score={this.state.score} updateScore={this.updateScore}></QuestionItemcomp>
                 }
             )}
 
@@ -78,7 +78,7 @@ export class Questions extends React.Component {
                         <Card.Title>You have finished the test!</Card.Title>
                         <Card.Text>You scored: {this.state.score}</Card.Text>
                         <Card.Text>If you would like to save your score please input your name below:</Card.Text>
-                        
+
                         <form onSubmit={this.handleSubmit}>
 
                             <div className="form-group">
